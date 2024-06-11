@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="17751d19a5aa4a228f363c5c062a38e6" Name="Diagram1">
+        <EntityTypeShape EntityType="HangmanGameDBModel.Account" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HangmanGameDBModel.Category" Width="1.5" PointX="1.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HangmanGameDBModel.Game" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="HangmanGameDBModel.GameLanguage" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HangmanGameDBModel.GameStatus" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HangmanGameDBModel.Person" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HangmanGameDBModel.Phrase" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="HangmanGameDBModel.Score" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HangmanGameDBModel.Turn" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Game_Challenger" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Game_Initiator" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Game_Winner" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Person_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Phrase_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Game_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Game_Phrase" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Game_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Turn_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="HangmanGameDBModel.FK_Score_Person" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
