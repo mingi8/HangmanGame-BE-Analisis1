@@ -37,7 +37,7 @@ jobs:
           dotnet-version: '8.0.x'
       - name: Install Visual Studio Build Tools
         run: |
-          choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Component.WebBuildTools --includeRecommended --includeOptional --quiet --wait"
+          choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.NetWebBuildTools --includeRecommended --includeOptional --quiet --wait"
       - name: Install SonarCloud scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
         shell: powershell
